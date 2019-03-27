@@ -11,8 +11,93 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
+# TODO:
+# - Decide on new base URI
+
 # ======================================================================
-# Classes
+# Properties to use for annotating datasets
+# ======================================================================
+
+:organism
+    a rdf:Property ;
+    rdfs:label "identifies the organism this data/model is about" ;
+    rdfs:range :Species .
+
+:hasTemperature
+    a rdf:Property ;
+    rdfs:label "Temperature measurement" .
+
+:cell_type
+    a rdf:Property ;
+    rdfs:label "identifies the cell type this data/model is about" ;
+    rdfs:range :CellType .
+
+:measures
+    a rdf:Property ;
+    rdfs:label "Describes which ontology term a CSV column is a measurement of." .
+
+:units
+    a rdf:Property ;
+    rdfs:label "The units of a measured quantity" ;
+    rdfs:comment "The list of allowed values is not kept as an ontology, but is mapped by name to CellML/pint/Sympy definitions." .
+
+:value
+    rdfs:label "The value of a measured quantity" .
+    # Maps to OBI measurement_datum
+
+# ======================================================================
+# Annotating the species/organism data or models are about
+# ======================================================================
+
+:Species
+    a rdfs:Class ;
+    rdfs:label "Species" ;
+    rdfs:comment "The class of typical species found in cardiac models." .
+
+:human
+    a :Species ;
+    rdfs:label "Human (Homo Sapiens)" .
+
+:mammalian
+    a :Species ;
+    rdfs:label "Mammalian" ;
+    rdfs:comment "Unspecified, unknown or mixed mammalian species." .
+
+# etc. TODO
+
+# ======================================================================
+# Annotating the cell type data or models are about
+# ======================================================================
+
+:CellType
+    a rdfs:Class ;
+    rdfs:label "Cell type" ;
+    rdfs:comment "The class of typical cell types found in cardiac models." .
+
+:hiPSC
+    a :CellType ;
+    rdfs:label "Human induced pluripotent stem cell" .
+
+:ventricular
+    a :CellType ;
+    rdfs:label "Ventricular" .
+
+:left_ventricular
+    a :ventricular ;
+    rdfs:label "Left ventricular" .
+
+:right_ventricular
+    a :ventricular ;
+    rdfs:label "Right ventricular" .
+
+:epicardial
+    a :CellType ;
+    rdfs:label "Epicardial cell" .
+
+# etc. TODO
+
+# ======================================================================
+# Classes for model annotation
 # ======================================================================
 
 # This class exists purely as a convenient mechanism for our tool in development to assist
