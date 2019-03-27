@@ -174,6 +174,11 @@
     rdfs:label "Mixed ion channels" ;
     rdfs:comment "Membrane ion channels that don't fit a more specific categorisation, or transport multiple species." .
 
+:PatchClampProperties
+    a :Category ;
+    rdfs:label "Patch clamp properties" ;
+    rdfs:comment "Properties of the patch clamp experimental setup represented explicitly in models." .
+
 :SRCurrent
     a :Category ;
     rdfs:label "SR currents" ;
@@ -410,19 +415,19 @@
     a :CleftConcentration ;
     rdfs:label "Concentration of calcium in the dyadic sub-space" ;
     rdfs:comment "Some models also have a separate dyadic sub-space (cytosol between JSR and t-tubules)." .
-    
+
 :dyadic_space_potassium_concentration
     a :Annotation ;
     a :CleftConcentration ;
     rdfs:label "Concentration of potassium in the dyadic sub-space" ;
     rdfs:comment "Some models also have a separate dyadic sub-space (cytosol between JSR and t-tubules)." .
-    
+
 :dyadic_space_sodium_concentration
     a :Annotation ;
     a :CleftConcentration ;
     rdfs:label "Concentration of sodium in the dyadic sub-space" ;
     rdfs:comment "Some models also have a separate dyadic sub-space (cytosol between JSR and t-tubules)." .
-    
+
 :dyadic_space_chloride_concentration
     a :Annotation ;
     a :CleftConcentration ;
@@ -459,7 +464,7 @@
     a :ExtracellularConcentration ;
     rdfs:label "Concentration of potassium in the bath" ;
     rdfs:comment "TODO!" .
-    
+
 # =====================================================
 # BUFFERING TERMS
 # =====================================================
@@ -481,7 +486,22 @@
     a :BufferingTerm ;
     rdfs:label "Scaling factor for calcium fluxes in the dyadic sub-space due to buffering" ;
     rdfs:comment "Some models also have a separate dyadic sub-space (cytosol between JSR and t-tubules). This term annotates how calcium fluxes here are scaled due to buffering" .
-    
+
+# =====================================================
+# PATCH CLAMP PROPERTIES
+# =====================================================
+
+:seal_resistance
+    a :Annotation ;
+    a :PatchClampProperties ;
+    rdfs:label "Patch clamp seal resistance" ;
+    rdfs:comment "Patch clamp seal resistance" .
+
+:leakage_compensation_percentage
+    a :Annotation ;
+    a :PatchClampProperties ;
+    rdfs:label "Percentage of seal leakage compensation current to include" ;
+    rdfs:comment "Percentage of seal leakage compensation current to include" .
 
 # =====================================================
 # CURRENTS
@@ -575,12 +595,14 @@
 :membrane_leakage_current
     a :Annotation ;
     a :MembraneMixedChannel ;
+    a :PatchClampProperties ;
     rdfs:label "Membrane leakage current" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :membrane_leakage_current_conductance
     a :Annotation ;
     a :MembraneMixedChannel ;
+    a :PatchClampProperties ;
     rdfs:label "Membrane leakage current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
@@ -828,7 +850,7 @@
     a :MembraneChlorideChannel ;
     rdfs:comment "Calcium activated transient outward chloride current, commonly known as Ito2" ;
     rdfs:label "Membrane transient outward chloride current" .
-    
+
 :membrane_transient_outward_chloride_current_conductance
     a :Annotation ;
     a :MembraneChlorideChannel ;
