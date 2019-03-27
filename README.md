@@ -1,2 +1,3 @@
-# ontologies
-Home for our ontology definitions
+# Web Lab Ontologies
+
+A central home for our ontology definition files.
