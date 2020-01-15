@@ -1154,7 +1154,7 @@
 
 <> dcterms:abstract "Chaste metadata for annotating CellML files representing cardiac electrophysiology models." .
 <> dcterms:creator "Chaste Development Team" .
-<> dcterms:license """Copyright (c) 2005-2015, University of Oxford.
+<> dcterms:license """Copyright (c) 2005-2020, University of Oxford.
 All rights reserved.
 
 University of Oxford means the Chancellor, Masters and Scholars of the
