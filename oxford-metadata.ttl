@@ -58,6 +58,14 @@
     a :Species ;
     rdfs:label "Human (Homo Sapiens)" .
 
+:rabbit
+    a :Species ;
+    rdfs:label "Rabbit" .
+
+:dog
+    a :Species ;
+    rdfs:label "Dog" .
+
 :mammalian
     a :Species ;
     rdfs:label "Mammalian" ;
@@ -78,6 +86,14 @@
     a :CellType ;
     rdfs:label "Human induced pluripotent stem cell" .
 
+:atrial
+    a :CellType ;
+    rdfs:label "Atrial" .
+
+:sino_atrial_node
+    a :CellType ;
+    rdfs:label "Sino-atrial node" .
+
 :ventricular
     a :CellType ;
     rdfs:label "Ventricular" .
@@ -92,7 +108,11 @@
 
 :epicardial
     a :CellType ;
-    rdfs:label "Epicardial cell" .
+    rdfs:label "(Sub)epicardial" .
+
+:endocardial
+    a :CellType ;
+    rdfs:label "(Sub)endocardial" .
 
 # etc. TODO
 
@@ -623,6 +643,12 @@
     a :MembraneSodiumChannel ;
     rdfs:label "Membrane fast sodium current conductance" .
 
+:membrane_fast_sodium_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembraneSodiumChannel ;
+    rdfs:label "Membrane fast sodium current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
+
 :membrane_fast_sodium_current_m_gate
     a :Annotation ;
     a :MembraneSodiumChannel ;
@@ -672,6 +698,11 @@
     rdfs:label "Membrane persistent sodium current conductance" ;
     rdfs:comment "Also known as membrane late sodium current conductance" .
 
+:membrane_persistent_sodium_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembraneSodiumChannel ;
+    rdfs:label "Membrane persistent sodium current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 # I Na,b (background)
 :membrane_background_sodium_current
@@ -700,6 +731,12 @@
     a :MembranePotassiumChannel ;
     rdfs:label "Membrane rapid delayed rectifier potassium current conductance" .
 
+:membrane_rapid_delayed_rectifier_potassium_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembranePotassiumChannel ;
+    rdfs:label "Membrane rapid delayed rectifier potassium current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
+
 :membrane_rapid_delayed_rectifier_potassium_current_conductance1
     a :Annotation ;
     a :MembranePotassiumChannel ;
@@ -722,6 +759,12 @@
     a :Annotation ;
     a :MembranePotassiumChannel ;
     rdfs:label "Membrane slow delayed rectifier potassium current conductance" .
+
+:membrane_slow_delayed_rectifier_potassium_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembranePotassiumChannel ;
+    rdfs:label "Membrane slow delayed rectifier potassium current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_slow_delayed_rectifier_potassium_current_xs1_gate_tau
     a :Annotation ;
@@ -746,6 +789,12 @@
     a :MembranePotassiumChannel ;
     rdfs:label "Membrane ultrarapid delayed rectifier potassium current conductance" .
 
+:membrane_ultrarapid_delayed_rectifier_potassium_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembranePotassiumChannel ;
+    rdfs:label "Membrane ultrarapid delayed rectifier potassium current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
+
 # I_Kss or Iss
 :membrane_non_inactivating_steady_state_potassium_current
     a :Annotation ;
@@ -768,6 +817,12 @@
     a :MembranePotassiumChannel ;
     rdfs:label "Membrane inward rectifier potassium current conductance" .
 
+:membrane_inward_rectifier_potassium_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembranePotassiumChannel ;
+    rdfs:label "Membrane inward rectifier potassium current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
+
 # I to, (a.k.a. I_to1) sometimes fast and slow components, sometimes not.
 :membrane_transient_outward_current
     a :Annotation ;
@@ -779,6 +834,12 @@
     a :Annotation ;
     a :MembranePotassiumChannel ;
     rdfs:label "Membrane transient outward current conductance" .
+
+:membrane_transient_outward_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembranePotassiumChannel ;
+    rdfs:label "Membrane transient outward current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_fast_transient_outward_current
     a :Annotation ;
@@ -796,6 +857,12 @@
     a :MembranePotassiumChannel ;
     rdfs:label "Membrane fast transient outward current conductance" .
 
+:membrane_fast_transient_outward_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembranePotassiumChannel ;
+    rdfs:label "Membrane fast transient outward current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
+
 :membrane_slow_transient_outward_current
     a :Annotation ;
     a :MembranePotassiumChannel ;
@@ -811,6 +878,12 @@
     a :Annotation ;
     a :MembranePotassiumChannel ;
     rdfs:label "Membrane slow transient outward current conductance" .
+
+:membrane_slow_transient_outward_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembranePotassiumChannel ;
+    rdfs:label "Membrane slow transient outward current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_transient_outward_current_time_independent_rectification_gate_constant
     a :Annotation ;
@@ -952,6 +1025,12 @@
     a :MembraneCalciumChannel ;
     rdfs:label "Membrane L-type calcium current conductance" .
 
+:membrane_L_type_calcium_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembraneCalciumChannel ;
+    rdfs:label "Membrane L-type calcium current conductance scaling factor" ;
+    rdfs:comment "A scalar that multiplies the conductance term for this current" .
+
 :membrane_L_type_calcium_current_d_gate
     a :Annotation ;
     a :MembraneCalciumChannel ;
@@ -1088,6 +1167,12 @@
     a :Annotation ;
     a :MembraneExchanger ;
     rdfs:label "Membrane sodium-calcium exchanger current conductance" ;
+    rdfs:comment "Also known as permeability" .
+
+:membrane_sodium_calcium_exchanger_current_conductance_scaling_factor
+    a :Annotation ;
+    a :MembraneExchanger ;
+    rdfs:label "Membrane sodium-calcium exchanger current conductance scaling factor" ;
     rdfs:comment "Also known as permeability" .
 
 :membrane_sodium_calcium_exchanger_dyadic_space_current
