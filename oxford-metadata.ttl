@@ -310,6 +310,20 @@
     rdfs:label "Potassium reversal potential" ;
     rdfs:comment "Reversal potential of potassium ions across the cell membrane" .
 
+:rapid_delayed_rectifier_potassium_reversal_potential
+    a :Annotation ;
+    a :MembranePotassiumChannel ;
+    a :Concentration ;
+    rdfs:label "IKr reversal potential" ;
+    rdfs:comment "Reversal potential for the IKr current across the cell membrane, for when it isn't the general potassium_reversal_potential" .
+
+:slow_delayed_rectifier_potassium_reversal_potential
+    a :Annotation ;
+    a :MembranePotassiumChannel ;
+    a :Concentration ;
+    rdfs:label "IKs reversal potential" ;
+    rdfs:comment "Reversal potential for the IKs current across the cell membrane, for when it isn't the general potassium_reversal_potential" .
+
 :calcium_reversal_potential
     a :Annotation ;
     a :MembraneCalciumChannel ;
