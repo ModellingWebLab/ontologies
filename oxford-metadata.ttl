@@ -250,6 +250,11 @@
     rdfs:label "Buffering" ;
     rdfs:comment "Annotations needed for studying and altering ionic buffering." .
 
+:CustomAnnotations
+    a :Category ;
+    rdfs:label "Custom annotations" ;
+    rdfs:comment "Custom annotations in other namespaces referenced by protocols." .
+
 # ======================================================================
 # General labels
 # ======================================================================
