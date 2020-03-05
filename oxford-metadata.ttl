@@ -1010,7 +1010,7 @@
     a :Annotation ;
     a :MembraneMixedChannel ;
     a :MembraneSodiumChannel ;
-    rdfs:label "Membrane L-type calcium channel sodium current conductance" .
+    rdfs:label "Membrane L-type calcium channel sodium current conductance or permeability" .
 
 :membrane_L_type_calcium_channel_potassium_current
     a :Annotation ;
@@ -1038,6 +1038,16 @@
     a :Annotation ;
     a :MembraneCalciumChannel ;
     rdfs:label "Membrane L-type calcium current conductance" .
+
+:membrane_L_type_calcium_current_open_probability
+    a :Annotation ;
+    a :MembraneCalciumChannel ;
+    rdfs:label "Membrane L-type calcium current open probability" .
+
+:membrane_L_type_calcium_current_driving_term
+    a :Annotation ;
+    a :MembraneCalciumChannel ;
+    rdfs:label "Membrane L-type calcium current driving term (GHK or ohmic)" .
 
 :membrane_L_type_calcium_current_conductance_scaling_factor
     a :Annotation ;
