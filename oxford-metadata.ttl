@@ -1010,7 +1010,7 @@
     a :Annotation ;
     a :MembraneMixedChannel ;
     a :MembraneSodiumChannel ;
-    rdfs:label "Membrane L-type calcium channel sodium current conductance" .
+    rdfs:label "Membrane L-type calcium channel sodium current conductance or permeability" .
 
 :membrane_L_type_calcium_channel_potassium_current
     a :Annotation ;
