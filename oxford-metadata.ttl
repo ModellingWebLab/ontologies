@@ -1050,9 +1050,20 @@
     rdfs:label "Membrane L-type calcium current open probability" .
 
 :membrane_L_type_calcium_current_driving_term
+    a :MembraneCalciumChannel ;    
+    rdfs:label "Membrane L-type calcium current driving term (GHK or ohmic)" .
+
+:membrane_L_type_calcium_current_ohmic_driving_term
+    a :Annotation ;
+    a :MembraneCalciumChannel ; 
+    a :membrane_L_type_calcium_current_driving_term ;
+    rdfs:label "Membrane L-type calcium current Ohmic driving term" .
+
+:membrane_L_type_calcium_current_GHK_driving_term
     a :Annotation ;
     a :MembraneCalciumChannel ;
-    rdfs:label "Membrane L-type calcium current driving term (GHK or ohmic)" .
+    a :membrane_L_type_calcium_current_driving_term ;
+    rdfs:label "Membrane L-type calcium current GHK driving term" .
 
 :membrane_L_type_calcium_current_conductance_scaling_factor
     a :Annotation ;
