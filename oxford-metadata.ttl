@@ -173,29 +173,29 @@
     rdfs:label "Exchangers" ;
     rdfs:comment "Terms related to proteins that use the energy of one ionic species moving down an electrochemical gradient, to move another species against its gradient." .
 
-:MembraneIonChannelRelated
+:MembraneIonChannel
     a :CellMembraneCurrentRelated ;
     rdfs:label "Ion channels" ;
     rdfs:comment "Terms related to proteins allowing certain ions to flow down their electrochemical gradients." .
 
 :MembranePotassiumChannel
-    a :MembraneIonChannelRelated ;
+    a :MembraneIonChannel ;
     rdfs:label "Potassium ion channels" .
 
 :MembraneSodiumChannel
-    a :MembraneIonChannelRelated ;
+    a :MembraneIonChannel ;
     rdfs:label "Sodium ion channels" .
 
 :MembraneCalciumChannel
-    a :MembraneIonChannelRelated ;
+    a :MembraneIonChannel ;
     rdfs:label "Calcium ion channels" .
 
 :MembraneChlorideChannel
-    a :MembraneIonChannelRelated ;
+    a :MembraneIonChannel ;
     rdfs:label "Chloride ion channels" .
 
 :MembraneMixedChannel
-    a :MembraneIonChannelRelated ;
+    a :MembraneIonChannel ;
     rdfs:label "Mixed ion channels" ;
     rdfs:comment "Membrane ion channels that don't fit a more specific categorisation, or transport multiple species." .
 
