@@ -148,30 +148,25 @@
     a :Category ;
     rdfs:label "Physical properties" .
 
-:IonicCurrent:
-    a :Category ;
-    rdfs:label "Ion currents" ;
-    rdfs:comment "Annotations of any kind of currents." .
+:IonicCurrent
+    a rdfs:Class ;
+    rdfs:label "Ionic currents" ;
+    rdfs:comment "All terms that represent a current anywhere in the cell." .
 
 :CellMembraneCurrentRelated
     a :Category ;
-    rdfs:label "Membrane currents" ;
-    rdfs:comment "Annotations associated with currents across the cell membrane." .
-
-:CellMembraneCurrentRelated
-    a :Category ;
-    rdfs:label "Membrane currents" ;
+    rdfs:label "Membrane currents and their properties" ;
     rdfs:comment "Annotations associated with currents across the cell membrane." .
 
 :StimulusCurrent
     a :CellMembraneCurrentRelated ;
     a :ChasteMetadata ;
-    rdfs:label "Stimulus current properties" .
+    rdfs:label "Stimulus current and its properties" .
 
-:MembranePump
+:MembranePumpRelated
     a :CellMembraneCurrentRelated ;
     rdfs:label "Pumps" ;
-    rdfs:comment "Proteins that use energy in ATP to pump ions against their electrochemical gradients." .
+    rdfs:comment "Terms related to proteins that use energy in ATP to pump ions against their electrochemical gradients." .
 
 :MembraneExchanger
     a :CellMembraneCurrentRelated ;
@@ -366,34 +361,34 @@
 
 :membrane_stimulus_current
     a :Annotation ;
-    a :StimulusCurrent ;
+    a :StimulusCurrentRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane stimulus current" .
 
 :membrane_stimulus_current_duration
     a :Annotation ;
-    a :StimulusCurrent ;
+    a :StimulusCurrentRelated ;
     rdfs:label "Membrane stimulus current pulse duration" .
 
 :membrane_stimulus_current_amplitude
     a :Annotation ;
-    a :StimulusCurrent ;
+    a :StimulusCurrentRelated ;
     rdfs:label "Membrane stimulus current pulse amplitude" ;
     rdfs:comment "This should be negative in order to cause a positive change in voltage." .
 
 :membrane_stimulus_current_period
     a :Annotation ;
-    a :StimulusCurrent ;
+    a :StimulusCurrentRelated ;
     rdfs:label "Membrane stimulus current pulse period" .
 
 :membrane_stimulus_current_offset
     a :Annotation ;
-    a :StimulusCurrent ;
+    a :StimulusCurrentRelated ;
     rdfs:label "Membrane stimulus current pulse start offset" .
 
 :membrane_stimulus_current_end
     a :Annotation ;
-    a :StimulusCurrent ;
+    a :StimulusCurrentRelated ;
     rdfs:label "Membrane stimulus current pulse end time" .
 
 # =====================================================
@@ -1271,39 +1266,39 @@
 # INaK
 :membrane_sodium_potassium_pump_current
     a :Annotation ;
-    a :MembranePump ;
+    a :MembranePumpRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane sodium-potassium pump current" .
 
 :membrane_sodium_potassium_pump_current_permeability
     a :Annotation ;
-    a :MembranePump ;
+    a :MembranePumpRelated ;
     rdfs:label "Membrane sodium-potassium pump current permeability" ;
     rdfs:comment "Often known as INaK_max" .
 
 # Ip,Ca
 :membrane_calcium_pump_current
     a :Annotation ;
-    a :MembranePump ;
+    a :MembranePumpRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane calcium pump current" .
 
 :membrane_calcium_pump_current_conductance
     a :Annotation ;
-    a :MembranePump ;
+    a :MembranePumpRelated ;
     rdfs:label "Membrane calcium pump current conductance" ;
     rdfs:comment "Also known as permeability" .
 
 # Ip,K
 :membrane_potassium_pump_current
     a :Annotation ;
-    a :MembranePump ;
+    a :MembranePumpRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane potassium pump current" .
 
 :membrane_potassium_pump_current_conductance
     a :Annotation ;
-    a :MembranePump ;
+    a :MembranePumpRelated ;
     rdfs:label "Membrane potassium pump current conductance" ;
     rdfs:comment "Also known as permeability" .
 
