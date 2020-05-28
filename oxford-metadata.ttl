@@ -168,34 +168,34 @@
     rdfs:label "Pumps" ;
     rdfs:comment "Terms related to proteins that use energy in ATP to pump ions against their electrochemical gradients." .
 
-:MembraneExchanger
+:MembraneExchangerRelated
     a :CellMembraneCurrentRelated ;
     rdfs:label "Exchangers" ;
-    rdfs:comment "Proteins that use the energy of one ionic species moving down an electrochemical gradient, to move another species against its gradient." .
+    rdfs:comment "Terms related to proteins that use the energy of one ionic species moving down an electrochemical gradient, to move another species against its gradient." .
 
-:MembraneIonChannel
+:MembraneIonChannelRelated
     a :CellMembraneCurrentRelated ;
     rdfs:label "Ion channels" ;
-    rdfs:comment "Proteins allowing certain ions to flow down their electrochemical gradients." .
+    rdfs:comment "Terms related to proteins allowing certain ions to flow down their electrochemical gradients." .
 
 :MembranePotassiumChannel
-    a :MembraneIonChannel ;
+    a :MembraneIonChannelRelated ;
     rdfs:label "Potassium ion channels" .
 
 :MembraneSodiumChannel
-    a :MembraneIonChannel ;
+    a :MembraneIonChannelRelated ;
     rdfs:label "Sodium ion channels" .
 
 :MembraneCalciumChannel
-    a :MembraneIonChannel ;
+    a :MembraneIonChannelRelated ;
     rdfs:label "Calcium ion channels" .
 
 :MembraneChlorideChannel
-    a :MembraneIonChannel ;
+    a :MembraneIonChannelRelated ;
     rdfs:label "Chloride ion channels" .
 
 :MembraneMixedChannel
-    a :MembraneIonChannel ;
+    a :MembraneIonChannelRelated ;
     rdfs:label "Mixed ion channels" ;
     rdfs:comment "Membrane ion channels that don't fit a more specific categorisation, or transport multiple species." .
 
@@ -1234,32 +1234,32 @@
 # I NCX
 :membrane_sodium_calcium_exchanger_current
     a :Annotation ;
-    a :MembraneExchanger ;
+    a :MembraneExchangerRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane sodium-calcium exchanger current" .
 
 :membrane_sodium_calcium_exchanger_current_conductance
     a :Annotation ;
-    a :MembraneExchanger ;
+    a :MembraneExchangerRelated ;
     rdfs:label "Membrane sodium-calcium exchanger current conductance" ;
     rdfs:comment "Also known as permeability" .
 
 :membrane_sodium_calcium_exchanger_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembraneExchanger ;
+    a :MembraneExchangerRelated ;
     rdfs:label "Membrane sodium-calcium exchanger current conductance scaling factor" ;
     rdfs:comment "Also known as permeability" .
 
 :membrane_sodium_calcium_exchanger_dyadic_space_current
     a :Annotation ;
-    a :MembraneExchanger ;
+    a :MembraneExchangerRelated ;
     a :IonicCurrent ;
     rdfs:comment "NaCa exchanger current across the cell membrane adjacent to dyadic space (i.e near SR)." ;
     rdfs:label "Sodium-calcium exchanger current into dyadic space" .
 
 :membrane_sodium_calcium_exchanger_dyadic_space_current_conductance
     a :Annotation ;
-    a :MembraneExchanger ;
+    a :MembraneExchangerRelated ;
     rdfs:label "Sodium-calcium exchanger current into dyadic space conductance" ;
     rdfs:comment "Also known as permeability" .
 
