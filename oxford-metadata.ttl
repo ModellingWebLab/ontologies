@@ -170,33 +170,33 @@
 
 :MembraneExchangerRelated
     a :CellMembraneCurrentRelated ;
-    rdfs:label "Exchangers" ;
+    rdfs:label "Exchanger" ;
     rdfs:comment "Terms related to proteins that use the energy of one ionic species moving down an electrochemical gradient, to move another species against its gradient." .
 
-:MembraneIonChannel
+:MembraneIonChannelRelated
     a :CellMembraneCurrentRelated ;
     rdfs:label "Ion channels" ;
     rdfs:comment "Terms related to proteins allowing certain ions to flow down their electrochemical gradients." .
 
-:MembranePotassiumChannel
-    a :MembraneIonChannel ;
-    rdfs:label "Potassium ion channels" .
+:MembranePotassiumChannelRelated
+    a :MembraneIonChannelRelated ;
+    rdfs:label "Terms related to potassium ion channels" .
 
-:MembraneSodiumChannel
-    a :MembraneIonChannel ;
-    rdfs:label "Sodium ion channels" .
+:MembraneSodiumChannelRelated
+    a :MembraneIonChannelRelated ;
+    rdfs:label "Terms related to sodium ion channels" .
 
-:MembraneCalciumChannel
-    a :MembraneIonChannel ;
-    rdfs:label "Calcium ion channels" .
+:MembraneCalciumChannelRelated
+    a :MembraneIonChannelRelated ;
+    rdfs:label "Terms related to calcium ion channels" .
 
-:MembraneChlorideChannel
-    a :MembraneIonChannel ;
-    rdfs:label "Chloride ion channels" .
+:MembraneChlorideChannelRelated
+    a :MembraneIonChannelRelated ;
+    rdfs:label "Terms related to chloride ion channels" .
 
-:MembraneMixedChannel
-    a :MembraneIonChannel ;
-    rdfs:label "Mixed ion channels" ;
+:MembraneMixedChannelRelated
+    a :MembraneIonChannelRelated ;
+    rdfs:label "terms related to mixed ion channels" ;
     rdfs:comment "Membrane ion channels that don't fit a more specific categorisation, or transport multiple species." .
 
 :PatchClampProperties
@@ -204,22 +204,22 @@
     rdfs:label "Patch clamp properties" ;
     rdfs:comment "Properties of the patch clamp experimental setup represented explicitly in models." .
 
-:SRCurrent
+:SRCurrentRelated
     a :Category ;
     rdfs:label "SR currents" ;
     rdfs:comment "Annotations associated with currents across the sarcoplasmic reticulum membrane." .
 
-:SRPump
-    a :SRCurrent ;
-    rdfs:label "Pumps" .
+:SRPumpRelatedRelated
+    a :SRCurrentRelated ;
+    rdfs:label "Terms related to pumps" .
 
-:SRExchanger
-    a :SRCurrent ;
+:SRExchangerRelated
+    a :SRCurrentRelated ;
     rdfs:label "Exchangers" .
 
-:SRIonChannel
-    a :SRCurrent ;
-    rdfs:label "Ion channels" .
+:SRIonChannelRelatedRelated
+    a :SRCurrentRelated ;
+    rdfs:label "Terms related to ion channels" .
 
 :Concentration
     a :Category ;
@@ -308,42 +308,42 @@
 # introduced for SR membrane, mitochondrial membranes etc.
 :sodium_reversal_potential
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     a :Concentration ;
     rdfs:label "Sodium reversal potential" ;
     rdfs:comment "Reversal potential of sodium ions across the cell membrane" .
 
 :potassium_reversal_potential
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :Concentration ;
     rdfs:label "Potassium reversal potential" ;
     rdfs:comment "Reversal potential of potassium ions across the cell membrane" .
 
 :rapid_delayed_rectifier_potassium_reversal_potential
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :Concentration ;
     rdfs:label "IKr reversal potential" ;
     rdfs:comment "Reversal potential for the IKr current across the cell membrane, for when it isn't the general potassium_reversal_potential" .
 
 :slow_delayed_rectifier_potassium_reversal_potential
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :Concentration ;
     rdfs:label "IKs reversal potential" ;
     rdfs:comment "Reversal potential for the IKs current across the cell membrane, for when it isn't the general potassium_reversal_potential" .
 
 :calcium_reversal_potential
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     a :Concentration ;
     rdfs:label "Calcium reversal potential" ;
     rdfs:comment "Reversal potential of calcium ions across the cell membrane" .
 
 :chloride_reversal_potential
     a :Annotation ;
-    a :MembraneChlorideChannel ;
+    a :MembraneChlorideChannelRelated ;
     a :Concentration ;
     rdfs:label "Chloride reversal potential" ;
     rdfs:comment "Reversal potential of chloride ions across the cell membrane" .
@@ -555,95 +555,95 @@
 # HISTORIC metadata - only for early models lacking components.
 :membrane_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane potassium current" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :membrane_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :membrane_plateau_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane plateau potassium current" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :membrane_plateau_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane plateau potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :potassium_channel_n_gate
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Potassium channel n gate" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :membrane_delayed_rectifier_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane delayed rectifier potassium current" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :membrane_delayed_rectifier_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane delayed rectifier potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :rapid_time_dependent_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Rapid time-dependent potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :rapid_time_dependent_potassium_current_Xr1_gate
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Rapid time-dependent potassium current Xr1 gate" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :rapid_time_dependent_potassium_current_Xr2_gate
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Rapid time-dependent potassium current Xr2 gate" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :slow_time_dependent_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Slow time-dependent potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :slow_time_dependent_potassium_current_Xs_gate
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Slow time-dependent potassium current Xs gate" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :membrane_slow_inward_current
     a :Annotation ;
-    a :MembraneMixedChannel ;
+    a :MembraneMixedChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane slow inward current" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :membrane_slow_inward_current_conductance
     a :Annotation ;
-    a :MembraneMixedChannel ;
+    a :MembraneMixedChannelRelated ;
     rdfs:label "Membrane slow inward current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :membrane_leakage_current
     a :Annotation ;
-    a :MembraneMixedChannel ;
+    a :MembraneMixedChannelRelated ;
     a :PatchClampProperties ;
     a :IonicCurrent ;
     rdfs:label "Membrane leakage current" ;
@@ -651,7 +651,7 @@
 
 :membrane_leakage_current_conductance
     a :Annotation ;
-    a :MembraneMixedChannel ;
+    a :MembraneMixedChannelRelated ;
     a :PatchClampProperties ;
     rdfs:label "Membrane leakage current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
@@ -665,87 +665,87 @@
 # I Na (fast)
 :membrane_fast_sodium_current
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane fast sodium current" .
 
 :membrane_fast_sodium_current_conductance
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current conductance" .
 
 :membrane_fast_sodium_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_fast_sodium_current_m_gate
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current m gate" .
 
 :membrane_fast_sodium_current_h_gate
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current h gate" .
 
 :membrane_fast_sodium_current_h_gate_tau
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current h gate tau" .
 
 :membrane_fast_sodium_current_j_gate
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current j gate" .
 
 :membrane_fast_sodium_current_j_gate_tau
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current j gate tau" .
 
 :membrane_fast_sodium_current_shift_inactivation
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current shift inactivation" .
 
 :membrane_fast_sodium_current_reduced_inactivation
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current reduced inactivation" .
 
 
 # I_Na_L (late or persistent)
 :membrane_persistent_sodium_current
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane persistent sodium current" ;
     rdfs:comment "Also known as membrane late sodium current" .
 
 :membrane_persistent_sodium_current_conductance
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane persistent sodium current conductance" ;
     rdfs:comment "Also known as membrane late sodium current conductance" .
 
 :membrane_persistent_sodium_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane persistent sodium current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 # I Na,b (background)
 :membrane_background_sodium_current
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane background sodium current" .
 
 :membrane_background_sodium_current_conductance
     a :Annotation ;
-    a :MembraneSodiumChannel ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane background sodium current conductance" .
 
 
@@ -756,203 +756,203 @@
 # I Kr
 :membrane_rapid_delayed_rectifier_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane rapid delayed rectifier potassium current" .
 
 :membrane_rapid_delayed_rectifier_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane rapid delayed rectifier potassium current conductance" .
 
 :membrane_rapid_delayed_rectifier_potassium_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane rapid delayed rectifier potassium current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_rapid_delayed_rectifier_potassium_current_conductance1
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane rapid delayed rectifier potassium current conductance 1" ;
     rdfs:comment "TODO!" .
 
 :membrane_rapid_delayed_rectifier_potassium_current_conductance2
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane rapid delayed rectifier potassium current conductance 2" ;
     rdfs:comment "TODO!" .
 
 # I Ks
 :membrane_slow_delayed_rectifier_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane slow delayed rectifier potassium current" .
 
 :membrane_slow_delayed_rectifier_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane slow delayed rectifier potassium current conductance" .
 
 :membrane_slow_delayed_rectifier_potassium_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane slow delayed rectifier potassium current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_slow_delayed_rectifier_potassium_current_xs1_gate_tau
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane slow delayed rectifier potassium current xs1 gate tau" ;
     rdfs:comment "Really a scaling factor for tau" .
 
 :membrane_slow_delayed_rectifier_potassium_current_xs2_gate_tau
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane slow delayed rectifier potassium current xs2 gate tau" ;
     rdfs:comment "Really a scaling factor for tau" .
 
 # I_Kur
 :membrane_ultrarapid_delayed_rectifier_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane ultrarapid delayed rectifier potassium current" .
 
 :membrane_ultrarapid_delayed_rectifier_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane ultrarapid delayed rectifier potassium current conductance" .
 
 :membrane_ultrarapid_delayed_rectifier_potassium_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane ultrarapid delayed rectifier potassium current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 # I_Kss or Iss
 :membrane_non_inactivating_steady_state_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane non-inactivating steady-state potassium current" .
 
 :membrane_non_inactivating_steady_state_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane non-inactivating steady-state potassium current conductance" .
 
 # I K1
 :membrane_inward_rectifier_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane inward rectifier potassium current" .
 
 :membrane_inward_rectifier_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane inward rectifier potassium current conductance" .
 
 :membrane_inward_rectifier_potassium_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane inward rectifier potassium current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 # I to, (a.k.a. I_to1) sometimes fast and slow components, sometimes not.
 :membrane_transient_outward_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:comment "I_to is a potassium current, sometimes subdivided into fast and slow components (a.k.a. I_to1)" ;
     rdfs:label "Membrane transient outward current" .
 
 :membrane_transient_outward_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane transient outward current conductance" .
 
 :membrane_transient_outward_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane transient outward current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_fast_transient_outward_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:comment "I_to fast is a potassium current, (a.k.a. I_to1 fast)" ;
     rdfs:label "Membrane fast transient outward current" .
 
 :membrane_transient_outward_current_r_gate
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane transient outward current r gate" .
 
 :membrane_fast_transient_outward_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane fast transient outward current conductance" .
 
 :membrane_fast_transient_outward_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane fast transient outward current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_slow_transient_outward_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:comment "I_to slow is a potassium current, (a.k.a. I_to1 slow)" ;
     rdfs:label "Membrane slow transient outward current" .
 
 :membrane_transient_outward_current_s_gate
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane transient outward current s gate" .
 
 :membrane_slow_transient_outward_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane slow transient outward current conductance" .
 
 :membrane_slow_transient_outward_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane slow transient outward current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_transient_outward_current_time_independent_rectification_gate_constant
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane transient outward current time-independent rectification gate constant" .
 
 # I katp
 :membrane_atp_dependent_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane ATP-dependent potassium current" .
 
 :membrane_atp_dependent_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane ATP-dependent potassium current conductance" .
 
 # I K,b (background current / leak)
 :membrane_background_potassium_current
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane background potassium current" .
 
 :membrane_background_potassium_current_conductance
     a :Annotation ;
-    a :MembranePotassiumChannel ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane background potassium current conductance" .
 
 
@@ -963,27 +963,27 @@
 # Ito,2 or Ito2
 :membrane_transient_outward_chloride_current
     a :Annotation ;
-    a :MembraneChlorideChannel ;
+    a :MembraneChlorideChannelRelated ;
     a :IonicCurrent ;
     rdfs:comment "Calcium activated transient outward chloride current, commonly known as Ito2" ;
     rdfs:label "Membrane transient outward chloride current" .
 
 :membrane_transient_outward_chloride_current_conductance
     a :Annotation ;
-    a :MembraneChlorideChannel ;
+    a :MembraneChlorideChannelRelated ;
     rdfs:label "Membrane transient outward chloride current conductance" .
 
 
 # I Cl,b (background)
 :membrane_background_chloride_current
     a :Annotation ;
-    a :MembraneChlorideChannel ;
+    a :MembraneChlorideChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane background chloride current" .
 
 :membrane_background_chloride_current_conductance
     a :Annotation ;
-    a :MembraneChlorideChannel ;
+    a :MembraneChlorideChannelRelated ;
     rdfs:label "Membrane background chloride current conductance" .
 
 # ========================================================================
@@ -995,37 +995,37 @@
 # if it isn't try and figure out which ionic species is being modelled for tagging, and give two tags if necessary.
 :membrane_hyperpolarisation_activated_funny_current
     a :Annotation ;
-    a :MembraneMixedChannel ;
+    a :MembraneMixedChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane hyperpolarisation-activated funny current" .
 
 :membrane_hyperpolarisation_activated_funny_current_single_gate
     a :Annotation ;
-    a :MembraneMixedChannel ;
+    a :MembraneMixedChannelRelated ;
     rdfs:label "Membrane hyperpolarisation-activated funny current single gate" .
 
 :membrane_hyperpolarisation_activated_funny_current_potassium_component
     a :Annotation ;
-    a :MembraneMixedChannel ;
-    a :MembranePotassiumChannel ;
+    a :MembraneMixedChannelRelated ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane hyperpolarisation-activated funny current potassium component" .
 
 :membrane_hyperpolarisation_activated_funny_current_potassium_component_conductance
     a :Annotation ;
-    a :MembraneMixedChannel ;
-    a :MembranePotassiumChannel ;
+    a :MembraneMixedChannelRelated ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane hyperpolarisation-activated funny current potassium component conductance" .
 
 :membrane_hyperpolarisation_activated_funny_current_sodium_component
     a :Annotation ;
-    a :MembraneMixedChannel ;
-    a :MembraneSodiumChannel ;
+    a :MembraneMixedChannelRelated ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane hyperpolarisation-activated funny current sodium component" .
 
 :membrane_hyperpolarisation_activated_funny_current_sodium_component_conductance
     a :Annotation ;
-    a :MembraneMixedChannel ;
-    a :MembraneSodiumChannel ;
+    a :MembraneMixedChannelRelated ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane hyperpolarisation-activated funny current sodium component conductance" .
 
 # ICaL conductance of non-calcium ions:
@@ -1034,28 +1034,28 @@
 # scale all these as well, or are they treated as completely separate ion currents (as per O'Hara).
 :membrane_L_type_calcium_channel_sodium_current
     a :Annotation ;
-    a :MembraneMixedChannel ;
-    a :MembraneSodiumChannel ;
+    a :MembraneMixedChannelRelated ;
+    a :MembraneSodiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane L-type calcium channel sodium current" .
 
 :membrane_L_type_calcium_channel_sodium_current_conductance
     a :Annotation ;
-    a :MembraneMixedChannel ;
-    a :MembraneSodiumChannel ;
+    a :MembraneMixedChannelRelated ;
+    a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane L-type calcium channel sodium current conductance or permeability" .
 
 :membrane_L_type_calcium_channel_potassium_current
     a :Annotation ;
-    a :MembraneMixedChannel ;
-    a :MembranePotassiumChannel ;
+    a :MembraneMixedChannelRelated ;
+    a :MembranePotassiumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane L-type calcium channel potassium current" .
 
 :membrane_L_type_calcium_channel_potassium_current_conductance
     a :Annotation ;
-    a :MembraneMixedChannel ;
-    a :MembranePotassiumChannel ;
+    a :MembraneMixedChannelRelated ;
+    a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane L-type calcium channel potassium current conductance" .
 
 
@@ -1065,117 +1065,117 @@
 # I CaL
 :membrane_L_type_calcium_current
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane L-type calcium current" .
 
 :membrane_L_type_calcium_current_conductance
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current conductance" .
 
 :membrane_L_type_calcium_current_open_probability
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current open probability" .
 
 :membrane_L_type_calcium_current_driving_term
-    a :MembraneCalciumChannel ;    
+    a :MembraneCalciumChannelRelated ;    
     rdfs:label "Membrane L-type calcium current driving term (GHK or ohmic)" .
 
 :membrane_L_type_calcium_current_ohmic_driving_term
     a :Annotation ;
-    a :MembraneCalciumChannel ; 
+    a :MembraneCalciumChannelRelated ; 
     a :membrane_L_type_calcium_current_driving_term ;
     rdfs:label "Membrane L-type calcium current Ohmic driving term" .
 
 :membrane_L_type_calcium_current_GHK_driving_term
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     a :membrane_L_type_calcium_current_driving_term ;
     rdfs:label "Membrane L-type calcium current GHK driving term" .
 
 :membrane_L_type_calcium_current_conductance_scaling_factor
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current conductance scaling factor" ;
     rdfs:comment "A scalar that multiplies the conductance term for this current" .
 
 :membrane_L_type_calcium_current_d_gate
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current d gate" .
 
 :membrane_L_type_calcium_current_f_gate
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current f gate" .
 
 :membrane_L_type_calcium_current_fCass_gate
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current fCass gate" .
 
 :membrane_L_type_calcium_current_fCa_gate
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current fCa gate" .
 
 :membrane_L_type_calcium_current_fCa2_gate
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current fCa2 gate" .
 
 :membrane_L_type_calcium_current_f2_gate
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current f2 gate" .
 
 :membrane_L_type_calcium_current_f2ds_gate
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current f2ds gate" .
 
 :membrane_L_type_calcium_current_d2_gate
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current d2 gate" .
 
 :membrane_L_type_calcium_current_f_gate_tau
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current f gate" .
 
 :membrane_L_type_calcium_current_f2_gate_tau
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current f2 gate" .
 
 :membrane_L_type_calcium_current_fCa_gate_tau
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current fCa gate tag" .
 
 :membrane_L_type_calcium_current_fCa2_gate_tau
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current fCa2 gate tau" .
 
 :membrane_L_type_calcium_current_d_gate_power_tau
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current d gate power tau" .
 
 # I Ca,b (background)
 :membrane_background_calcium_current
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Membrane background calcium current" .
 
 :membrane_background_calcium_current_conductance
     a :Annotation ;
-    a :MembraneCalciumChannel ;
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane background calcium current conductance" .
 
 # ========================================================================
@@ -1184,47 +1184,47 @@
 
 :SR_release_current
     a :Annotation ;
-    a :SRIonChannel ;
+    a :SRIonChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Sarcoplasmic reticulum release current" ;
     rdfs:comment "Also known as Jrel or RyR channel current" .
 
 :SR_release_current_max
     a :Annotation ;
-    a :SRIonChannel ;
+    a :SRIonChannelRelated ;
     rdfs:label "Sarcoplasmic reticulum release current max" .
 
 :SR_uptake_current
     a :Annotation ;
-    a :SRPump ;
+    a :SRPumpRelated ;
     a :IonicCurrent ;
     rdfs:label "Sarcoplasmic reticulum uptake current" ;
     rdfs:comment "Also known as Jup or SERCA current" .
 
 :SR_uptake_current_max
     a :Annotation ;
-    a :SRPump ;
+    a :SRPumpRelated ;
     rdfs:label "Sarcoplasmic reticulum uptake current max" .
 
 :SR_leak_current
     a :Annotation ;
-    a :SRIonChannel ;
+    a :SRIonChannelRelated ;
     a :IonicCurrent ;
     rdfs:label "Sarcoplasmic reticulum leak current" .
 
 :SR_leak_current_max
     a :Annotation ;
-    a :SRIonChannel ;
+    a :SRIonChannelRelated ;
     rdfs:label "Sarcoplasmic reticulum leak current max" .
 
 :SR_release_kmcacyt
     a :Annotation ;
-    a :SRIonChannel ;
+    a :SRIonChannelRelated ;
     rdfs:label "Sarcoplasmic reticulum release kmcacyt" .
 
 :SR_release_kmcads
     a :Annotation ;
-    a :SRIonChannel ;
+    a :SRIonChannelRelated ;
     rdfs:label "Sarcoplasmic reticulum release kmcads" .
 
 # ========================================================================
