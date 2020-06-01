@@ -170,7 +170,7 @@
 
 :MembraneExchangerRelated
     a :CellMembraneCurrentRelated ;
-    rdfs:label "Exchanger" ;
+    rdfs:label "Exchangers" ;
     rdfs:comment "Terms related to proteins that use the energy of one ionic species moving down an electrochemical gradient, to move another species against its gradient." .
 
 :MembraneIonChannelRelated
