@@ -218,9 +218,10 @@
     a :SRCurrentRelated ;
     rdfs:label "Exchangers" .
 
-:SRIonChannelRelatedRelated
+:SRIonChannelRelated
     a :SRCurrentRelated ;
-    rdfs:label "Terms related to ion channels" .
+    rdfs:label "Ion channels" ;
+    rdfs:comment "Terms related to proteins in the sarcoplasmic reticulum membrane allowing certain ions to flow down their electrochemical gradients." .
 
 :Concentration
     a :Category ;
