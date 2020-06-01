@@ -196,7 +196,7 @@
 
 :MembraneMixedChannelRelated
     a :MembraneIonChannelRelated ;
-    rdfs:label "terms related to mixed ion channels" ;
+    rdfs:label "Terms related to mixed ion channels" ;
     rdfs:comment "Membrane ion channels that don't fit a more specific categorisation, or transport multiple species." .
 
 :PatchClampProperties
