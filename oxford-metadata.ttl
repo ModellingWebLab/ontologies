@@ -209,7 +209,7 @@
     rdfs:label "SR currents" ;
     rdfs:comment "Annotations associated with currents across the sarcoplasmic reticulum membrane." .
 
-:SRPumpRelatedRelated
+:SRPumpRelated
     a :SRCurrentRelated ;
     rdfs:label "Pumps"  ;
     rdfs:comment "Terms related to proteins in the sarcoplasmic reticulum membrane that use energy in ATP to pump ions against their electrochemical gradients." .
