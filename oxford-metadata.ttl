@@ -211,7 +211,8 @@
 
 :SRPumpRelatedRelated
     a :SRCurrentRelated ;
-    rdfs:label "Terms related to pumps" .
+    rdfs:label "Pumps"  ;
+    rdfs:comment "Terms related to proteins in the sarcoplasmic reticulum membrane that use energy in ATP to pump ions against their electrochemical gradients." .
 
 :SRExchangerRelated
     a :SRCurrentRelated ;
