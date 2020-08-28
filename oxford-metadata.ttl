@@ -1305,6 +1305,42 @@
     rdfs:comment "Also known as permeability" .
 
 
+# ========================================================================
+# Terms related to state transition rates, useful for parameter fitting
+# ========================================================================
+
+:TransitionRateRelated
+    a :Category ;
+    rdfs:label "Transition rates and related parameters" .
+
+:TransitionRate
+    a :TransitionRateRelated ;
+    rdfs:label "Markov state transition rates" .
+
+:TransitionRateParameter
+    a :TransitionRateRelated ;
+    rdfs:label "Parameters for transition rate equations" .
+
+:exp2_V_positive_rate
+    a :TransitionRate ;
+    rdfs:label "Transition rate of the form a*exp(+b*V)" ;
+    rdfs:comment "Transition rate with positive linear voltage dependence of the form a*exp(+b*V)" .
+
+:exp2_V_negative_rate
+    a :TransitionRate ;
+    rdfs:label "Transition rate of the form a*exp(-b*V)" ;
+    rdfs:comment "Transition rate with negative linear voltage dependence of the form a*exp(-b*V)" .
+
+:exp2_a_parameter
+    a :TransitionRateParameter ;
+    rdfs:label "'a' parameter for a transition rate of the form a*exp(±b*V)" ;
+    rdfs:comment "'a' parameter for a transition rate with linear voltage dependence of the form a*exp(±b*V)" .
+
+:exp2_b_parameter
+    a :TransitionRateParameter ;
+    rdfs:label "'b' parameter for a transition rate of the form a*exp(±b*V)" ;
+    rdfs:comment "'b' parameter for a transition rate with linear voltage dependence of the form a*exp(±b*V)" .
+
 # ======================================================================
 # Deprecated terms
 # ======================================================================
