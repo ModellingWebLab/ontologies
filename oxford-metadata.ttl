@@ -155,7 +155,8 @@
 
 :ConductanceOrPermeability
     a rdfs:Class ;
-    rdfs:label "A conductance or permeability parameter" .
+    rdfs:label "A maximal conductance or permeability parameter" ;
+    rdfs:comment "Tags for maximal conductance or permeability when open probability is equal to one (these may be algebraic expressions as well as constants)." .
 
 :CellMembraneCurrentRelated
     a :Category ;
@@ -1354,7 +1355,7 @@
 
 :TransitionRate
     a :TransitionRateRelated ;
-    rdfs:label "Markov state transition rates" .
+    rdfs:label "Ion channel state transition rate" .
 
 :TransitionRateParameter
     a :TransitionRateRelated ;
@@ -1362,23 +1363,23 @@
 
 :exp2_V_positive_rate
     a :TransitionRate ;
-    rdfs:label "Transition rate of the form a*exp(+b*V)" ;
-    rdfs:comment "Transition rate with positive linear voltage dependence of the form a*exp(+b*V)" .
+    rdfs:label "Transition rate k of the form k=a*exp(+b*V)" ;
+    rdfs:comment "Transition rate k with positive linear voltage dependence of the form k=a*exp(+b*V)" .
 
 :exp2_V_negative_rate
     a :TransitionRate ;
-    rdfs:label "Transition rate of the form a*exp(-b*V)" ;
-    rdfs:comment "Transition rate with negative linear voltage dependence of the form a*exp(-b*V)" .
+    rdfs:label "Transition rate k of the form k=a*exp(-b*V)" ;
+    rdfs:comment "Transition rate k with negative linear voltage dependence of the form k=a*exp(-b*V)" .
 
 :exp2_a_parameter
     a :TransitionRateParameter ;
-    rdfs:label "'a' parameter for a transition rate of the form a*exp(±b*V)" ;
-    rdfs:comment "'a' parameter for a transition rate with linear voltage dependence of the form a*exp(±b*V)" .
+    rdfs:label "'a' parameter in a transition rate of the form a*exp(±b*V)" ;
+    rdfs:comment "'a' parameter in a transition rate with linear voltage dependence, of the form a*exp(±b*V)" .
 
 :exp2_b_parameter
     a :TransitionRateParameter ;
-    rdfs:label "'b' parameter for a transition rate of the form a*exp(±b*V)" ;
-    rdfs:comment "'b' parameter for a transition rate with linear voltage dependence of the form a*exp(±b*V)" .
+    rdfs:label "'b' parameter in a transition rate of the form a*exp(±b*V)" ;
+    rdfs:comment "'b' parameter in a transition rate with linear voltage dependence, of the form a*exp(±b*V)" .
 
 # ======================================================================
 # Deprecated terms
