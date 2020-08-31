@@ -133,6 +133,22 @@
     rdfs:label "Implicit Variable Annotation" ;
     rdfs:comment "The class of IRIs that implicitly annotate variables in a CellML model (i.e. are added automatically by tools)." .
 
+:MultipleUsesAllowed
+    a rdfs:Class ;
+    rdfs:label "Annotations that can appear on more than one variable in a model." ;
+    rdfs:comment "This indicates to the annotation tool that it should allow multiple occurrences." .
+
+:IonicCurrent
+    a rdfs:Class ;
+    rdfs:label "Ionic currents" ;
+    rdfs:comment "All terms that represent a current anywhere in the cell." .
+
+:ConductanceOrPermeability
+    a rdfs:Class ;
+    rdfs:label "A maximal conductance or permeability parameter" ;
+    rdfs:comment "Tags for maximal conductance or permeability when open probability is equal to one (these may be algebraic expressions as well as constants)." .
+
+
 # The following classes are used to build the tree hierarchy containing the available annotations in the UI.
 
 :Category
@@ -147,16 +163,6 @@
 :PhysicalProperty
     a :Category ;
     rdfs:label "Physical properties" .
-
-:IonicCurrent
-    a rdfs:Class ;
-    rdfs:label "Ionic currents" ;
-    rdfs:comment "All terms that represent a current anywhere in the cell." .
-
-:ConductanceOrPermeability
-    a rdfs:Class ;
-    rdfs:label "A maximal conductance or permeability parameter" ;
-    rdfs:comment "Tags for maximal conductance or permeability when open probability is equal to one (these may be algebraic expressions as well as constants)." .
 
 :CellMembraneCurrentRelated
     a :Category ;
@@ -1362,21 +1368,29 @@
     rdfs:label "Parameters for transition rate equations" .
 
 :exp2_V_positive_rate
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
     a :TransitionRate ;
     rdfs:label "Transition rate k of the form k=a*exp(+b*V)" ;
     rdfs:comment "Transition rate k with positive linear voltage dependence of the form k=a*exp(+b*V)" .
 
 :exp2_V_negative_rate
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
     a :TransitionRate ;
     rdfs:label "Transition rate k of the form k=a*exp(-b*V)" ;
     rdfs:comment "Transition rate k with negative linear voltage dependence of the form k=a*exp(-b*V)" .
 
 :exp2_a_parameter
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
     a :TransitionRateParameter ;
     rdfs:label "'a' parameter in a transition rate of the form a*exp(±b*V)" ;
     rdfs:comment "'a' parameter in a transition rate with linear voltage dependence, of the form a*exp(±b*V)" .
 
 :exp2_b_parameter
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
     a :TransitionRateParameter ;
     rdfs:label "'b' parameter in a transition rate of the form a*exp(±b*V)" ;
     rdfs:comment "'b' parameter in a transition rate with linear voltage dependence, of the form a*exp(±b*V)" .
