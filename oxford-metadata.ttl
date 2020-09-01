@@ -133,6 +133,22 @@
     rdfs:label "Implicit Variable Annotation" ;
     rdfs:comment "The class of IRIs that implicitly annotate variables in a CellML model (i.e. are added automatically by tools)." .
 
+:MultipleUsesAllowed
+    a rdfs:Class ;
+    rdfs:label "Annotations that can appear on more than one variable in a model." ;
+    rdfs:comment "This indicates to the annotation tool that it should allow multiple occurrences." .
+
+:IonicCurrent
+    a rdfs:Class ;
+    rdfs:label "Ionic currents" ;
+    rdfs:comment "All terms that represent a current anywhere in the cell." .
+
+:ConductanceOrPermeability
+    a rdfs:Class ;
+    rdfs:label "A maximal conductance or permeability parameter" ;
+    rdfs:comment "Tags for maximal conductance or permeability when open probability is equal to one (these may be algebraic expressions as well as constants)." .
+
+
 # The following classes are used to build the tree hierarchy containing the available annotations in the UI.
 
 :Category
@@ -147,11 +163,6 @@
 :PhysicalProperty
     a :Category ;
     rdfs:label "Physical properties" .
-
-:IonicCurrent
-    a rdfs:Class ;
-    rdfs:label "Ionic currents" ;
-    rdfs:comment "All terms that represent a current anywhere in the cell." .
 
 :CellMembraneCurrentRelated
     a :Category ;
@@ -565,6 +576,7 @@
 :membrane_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
@@ -578,6 +590,7 @@
 :membrane_plateau_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane plateau potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
@@ -597,12 +610,14 @@
 :membrane_delayed_rectifier_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane delayed rectifier potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :rapid_time_dependent_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Rapid time-dependent potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
@@ -621,6 +636,7 @@
 :slow_time_dependent_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Slow time-dependent potassium current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
@@ -640,6 +656,7 @@
 :membrane_slow_inward_current_conductance
     a :Annotation ;
     a :MembraneMixedChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane slow inward current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
@@ -655,6 +672,7 @@
     a :Annotation ;
     a :MembraneMixedChannelRelated ;
     a :PatchClampProperties ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane leakage current conductance" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
@@ -674,6 +692,7 @@
 :membrane_fast_sodium_current_conductance
     a :Annotation ;
     a :MembraneSodiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane fast sodium current conductance" .
 
 :membrane_fast_sodium_current_conductance_scaling_factor
@@ -729,6 +748,7 @@
 :membrane_persistent_sodium_current_conductance
     a :Annotation ;
     a :MembraneSodiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane persistent sodium current conductance" ;
     rdfs:comment "Also known as membrane late sodium current conductance" .
 
@@ -748,6 +768,7 @@
 :membrane_background_sodium_current_conductance
     a :Annotation ;
     a :MembraneSodiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane background sodium current conductance" .
 
 
@@ -765,6 +786,7 @@
 :membrane_rapid_delayed_rectifier_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane rapid delayed rectifier potassium current conductance" .
 
 :membrane_rapid_delayed_rectifier_potassium_current_conductance_scaling_factor
@@ -776,12 +798,14 @@
 :membrane_rapid_delayed_rectifier_potassium_current_conductance1
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane rapid delayed rectifier potassium current conductance 1" ;
     rdfs:comment "TODO!" .
 
 :membrane_rapid_delayed_rectifier_potassium_current_conductance2
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane rapid delayed rectifier potassium current conductance 2" ;
     rdfs:comment "TODO!" .
 
@@ -795,6 +819,7 @@
 :membrane_slow_delayed_rectifier_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane slow delayed rectifier potassium current conductance" .
 
 :membrane_slow_delayed_rectifier_potassium_current_conductance_scaling_factor
@@ -825,6 +850,7 @@
 :membrane_ultrarapid_delayed_rectifier_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane ultrarapid delayed rectifier potassium current conductance" .
 
 :membrane_ultrarapid_delayed_rectifier_potassium_current_conductance_scaling_factor
@@ -843,6 +869,7 @@
 :membrane_non_inactivating_steady_state_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane non-inactivating steady-state potassium current conductance" .
 
 # I K1
@@ -855,6 +882,7 @@
 :membrane_inward_rectifier_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane inward rectifier potassium current conductance" .
 
 :membrane_inward_rectifier_potassium_current_conductance_scaling_factor
@@ -874,6 +902,7 @@
 :membrane_transient_outward_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane transient outward current conductance" .
 
 :membrane_transient_outward_current_conductance_scaling_factor
@@ -897,6 +926,7 @@
 :membrane_fast_transient_outward_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane fast transient outward current conductance" .
 
 :membrane_fast_transient_outward_current_conductance_scaling_factor
@@ -920,6 +950,7 @@
 :membrane_slow_transient_outward_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane slow transient outward current conductance" .
 
 :membrane_slow_transient_outward_current_conductance_scaling_factor
@@ -943,6 +974,7 @@
 :membrane_atp_dependent_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane ATP-dependent potassium current conductance" .
 
 # I K,b (background current / leak)
@@ -955,6 +987,7 @@
 :membrane_background_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane background potassium current conductance" .
 
 
@@ -973,6 +1006,7 @@
 :membrane_transient_outward_chloride_current_conductance
     a :Annotation ;
     a :MembraneChlorideChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane transient outward chloride current conductance" .
 
 
@@ -986,6 +1020,7 @@
 :membrane_background_chloride_current_conductance
     a :Annotation ;
     a :MembraneChlorideChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane background chloride current conductance" .
 
 # ========================================================================
@@ -1016,6 +1051,7 @@
     a :Annotation ;
     a :MembraneMixedChannelRelated ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane hyperpolarisation-activated funny current potassium component conductance" .
 
 :membrane_hyperpolarisation_activated_funny_current_sodium_component
@@ -1028,6 +1064,7 @@
     a :Annotation ;
     a :MembraneMixedChannelRelated ;
     a :MembraneSodiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane hyperpolarisation-activated funny current sodium component conductance" .
 
 # ICaL conductance of non-calcium ions:
@@ -1045,6 +1082,7 @@
     a :Annotation ;
     a :MembraneMixedChannelRelated ;
     a :MembraneSodiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane L-type calcium channel sodium current conductance or permeability" .
 
 :membrane_L_type_calcium_channel_potassium_current
@@ -1058,6 +1096,7 @@
     a :Annotation ;
     a :MembraneMixedChannelRelated ;
     a :MembranePotassiumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane L-type calcium channel potassium current conductance" .
 
 
@@ -1074,6 +1113,7 @@
 :membrane_L_type_calcium_current_conductance
     a :Annotation ;
     a :MembraneCalciumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane L-type calcium current conductance" .
 
 :membrane_L_type_calcium_current_open_probability
@@ -1082,12 +1122,12 @@
     rdfs:label "Membrane L-type calcium current open probability" .
 
 :membrane_L_type_calcium_current_driving_term
-    a :MembraneCalciumChannelRelated ;    
+    a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current driving term (GHK or ohmic)" .
 
 :membrane_L_type_calcium_current_ohmic_driving_term
     a :Annotation ;
-    a :MembraneCalciumChannelRelated ; 
+    a :MembraneCalciumChannelRelated ;
     a :membrane_L_type_calcium_current_driving_term ;
     rdfs:label "Membrane L-type calcium current Ohmic driving term" .
 
@@ -1178,6 +1218,7 @@
 :membrane_background_calcium_current_conductance
     a :Annotation ;
     a :MembraneCalciumChannelRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane background calcium current conductance" .
 
 # ========================================================================
@@ -1243,6 +1284,7 @@
 :membrane_sodium_calcium_exchanger_current_conductance
     a :Annotation ;
     a :MembraneExchangerRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane sodium-calcium exchanger current conductance" ;
     rdfs:comment "Also known as permeability" .
 
@@ -1262,6 +1304,7 @@
 :membrane_sodium_calcium_exchanger_dyadic_space_current_conductance
     a :Annotation ;
     a :MembraneExchangerRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Sodium-calcium exchanger current into dyadic space conductance" ;
     rdfs:comment "Also known as permeability" .
 
@@ -1275,6 +1318,7 @@
 :membrane_sodium_potassium_pump_current_permeability
     a :Annotation ;
     a :MembranePumpRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane sodium-potassium pump current permeability" ;
     rdfs:comment "Often known as INaK_max" .
 
@@ -1288,6 +1332,7 @@
 :membrane_calcium_pump_current_conductance
     a :Annotation ;
     a :MembranePumpRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane calcium pump current conductance" ;
     rdfs:comment "Also known as permeability" .
 
@@ -1301,9 +1346,54 @@
 :membrane_potassium_pump_current_conductance
     a :Annotation ;
     a :MembranePumpRelated ;
+    a :ConductanceOrPermeability ;
     rdfs:label "Membrane potassium pump current conductance" ;
     rdfs:comment "Also known as permeability" .
 
+
+# ========================================================================
+# Terms related to state transition rates, useful for parameter fitting
+# ========================================================================
+
+:TransitionRateRelated
+    a :Category ;
+    rdfs:label "Transition rates and related parameters" .
+
+:TransitionRate
+    a :TransitionRateRelated ;
+    rdfs:label "Ion channel state transition rate" .
+
+:TransitionRateParameter
+    a :TransitionRateRelated ;
+    rdfs:label "Parameters for transition rate equations" .
+
+:exp2_V_positive_rate
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
+    a :TransitionRate ;
+    rdfs:label "Transition rate k of the form k=a*exp(+b*V)" ;
+    rdfs:comment "Transition rate k with positive linear voltage dependence of the form k=a*exp(+b*V)" .
+
+:exp2_V_negative_rate
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
+    a :TransitionRate ;
+    rdfs:label "Transition rate k of the form k=a*exp(-b*V)" ;
+    rdfs:comment "Transition rate k with negative linear voltage dependence of the form k=a*exp(-b*V)" .
+
+:exp2_a_parameter
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
+    a :TransitionRateParameter ;
+    rdfs:label "'a' parameter in a transition rate of the form a*exp(±b*V)" ;
+    rdfs:comment "'a' parameter in a transition rate with linear voltage dependence, of the form a*exp(±b*V)" .
+
+:exp2_b_parameter
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
+    a :TransitionRateParameter ;
+    rdfs:label "'b' parameter in a transition rate of the form a*exp(±b*V)" ;
+    rdfs:comment "'b' parameter in a transition rate with linear voltage dependence, of the form a*exp(±b*V)" .
 
 # ======================================================================
 # Deprecated terms
