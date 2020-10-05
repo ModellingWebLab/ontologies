@@ -8,4 +8,4 @@ After updates, run
 `python ttl2rdf.py oxford-metadata.ttl oxford-metadata.rdf`
 to update the RDF file to match, and commit both.
 
-This should now work with python3
+This should now work with python3.
