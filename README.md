@@ -5,5 +5,5 @@ A central home for ontology definition files which define metadata tags used to 
 `oxford_metadata.ttl` is the human-readable file which should be updated.
 
 After updates, run 
-`python ttl2rdf.py oxford_metadata.ttl oxford_metadata.rdf`
+`python ttl2rdf.py oxford-metadata.ttl oxford_metadata.rdf`
 to update the RDF file to match, and commit both.
