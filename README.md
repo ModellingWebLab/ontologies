@@ -7,3 +7,5 @@ A central home for ontology definition files which define metadata tags used to 
 After updates, run 
 `python ttl2rdf.py oxford-metadata.ttl oxford-metadata.rdf`
 to update the RDF file to match, and commit both.
+
+This should now work with python3
