@@ -169,7 +169,7 @@
     rdfs:label "Membrane currents and their properties" ;
     rdfs:comment "Annotations associated with currents across the cell membrane." .
 
-:StimulusCurrent
+:StimulusCurrentRelated
     a :CellMembraneCurrentRelated ;
     a :ChasteMetadata ;
     rdfs:label "Stimulus current and its properties" .
