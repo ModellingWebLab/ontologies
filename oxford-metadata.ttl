@@ -411,21 +411,25 @@
 # basic 'intracellular' and 'extracellular'
 :extracellular_potassium_concentration
     a :Annotation ;
+    a :Class ;
     a :ExtracellularConcentration ;
     rdfs:label "Extracellular potassium concentration" .
 
 :extracellular_calcium_concentration
     a :Annotation ;
+    a :Class ;
     a :ExtracellularConcentration ;
     rdfs:label "Extracellular calcium concentration" .
 
 :extracellular_sodium_concentration
     a :Annotation ;
+    a :Class ;
     a :ExtracellularConcentration ;
     rdfs:label "Extracellular sodium concentration" .
 
 :extracellular_chloride_concentration
     a :Annotation ;
+    a :Class ;
     a :ExtracellularConcentration ;
     rdfs:label "Extracellular chloride concentration" .
 
@@ -516,12 +520,53 @@
     rdfs:label "Concentration of chloride ions in the sub-membrane compartment" ;
     rdfs:comment "Some models have a separate compartment underlying the entire cell membrane, distinct from the dyadic sub-space." .
 
+# Detailed extra-cellular concentrations
+:extracellular_bath_potassium_concentration
+    a :Annotation ;
+    a :ExtracellularPotassiumConcentration ;
+    rdfs:label "Potassium concentration in the extracellular bath, far from the cell" .
+
+:extracellular_bath_calcium_concentration
+    a :Annotation ;
+    a :ExtracellularCalciumConcentration ;
+    rdfs:label "Calcium concentration in the extracellular bath, far from the cell" .
+
+:extracellular_bath_sodium_concentration
+    a :Annotation ;
+    a :ExtracellularSodiumConcentration ;
+    rdfs:label "Sodium concentration in the extracellular bath, far from the cell" .
+
+:extracellular_bath_chloride_concentration
+    a :Annotation ;
+    a :ExtracellularChlorideConcentration ;
+    rdfs:label "Chloride concentration in the extracellular bath, far from the cell" .
+
+:extracellular_cleft_potassium_concentration
+    a :Annotation ;
+    a :ExtracellularPotassiumConcentration ;
+    rdfs:label "Potassium concentration in the extracellular cleft, near the cell" .
+
+:extracellular_cleft_calcium_concentration
+    a :Annotation ;
+    a :ExtracellularCalciumConcentration ;
+    rdfs:label "Calcium concentration in the extracellular cleft, near the cell" .
+
+:extracellular_cleft_sodium_concentration
+    a :Annotation ;
+    a :ExtracellularSodiumConcentration ;
+    rdfs:label "Sodium concentration in the extracellular cleft, near the cell" .
+
+:extracellular_cleft_chloride_concentration
+    a :Annotation ;
+    a :ExtracellularChlorideConcentration ;
+    rdfs:label "Chloride concentration in the extracellular cleft, near the cell" .
+
 # Others
 :bath_potassium_concentration
     a :Annotation ;
     a :ExtracellularConcentration ;
     rdfs:label "Concentration of potassium in the bath" ;
-    rdfs:comment "TODO!" .
+    rdfs:comment "Deprecated! Use extracellular_bath_potassium_concentration instead" .
 
 # =====================================================
 # BUFFERING TERMS
