@@ -251,7 +251,7 @@
     rdfs:label "Extracellular ionic concentrations, far from the cell" .
 
 :ExtracellularCleftConcentration
-    a :Concentration ;
+    a :ExtracellularConcentration ;
     rdfs:label "Extracellular ionic concentrations, close to the cell" .
 
 :SRConcentration
