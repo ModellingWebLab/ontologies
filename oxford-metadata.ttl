@@ -528,49 +528,49 @@
 :extracellular_bath_potassium_concentration
     a :Annotation ;
     a :ExtracellularBathConcentration ;
-    rdfs:label "Potassium concentration in the extracellular bath" .
+    rdfs:label "Potassium concentration in the extracellular bath" ;
     rdfs:comment "Some models divide the extracellular space into 'bath' (far from the cell) and 'cleft' (near the cell)." .
 
 :extracellular_bath_calcium_concentration
     a :Annotation ;
     a :ExtracellularBathConcentration ;
-    rdfs:label "Calcium concentration in the extracellular bath" .
+    rdfs:label "Calcium concentration in the extracellular bath" ;
     rdfs:comment "Some models divide the extracellular space into 'bath' (far from the cell) and 'cleft' (near the cell)." .
 
 :extracellular_bath_sodium_concentration
     a :Annotation ;
     a :ExtracellularBathConcentration ;
-    rdfs:label "Sodium concentration in the extracellular bath" .
+    rdfs:label "Sodium concentration in the extracellular bath" ;
     rdfs:comment "Some models divide the extracellular space into 'bath' (far from the cell) and 'cleft' (near the cell)." .
 
 :extracellular_bath_chloride_concentration
     a :Annotation ;
     a :ExtracellularBathConcentration ;
-    rdfs:label "Chloride concentration in the extracellular bath" .
+    rdfs:label "Chloride concentration in the extracellular bath" ;
     rdfs:comment "Some models divide the extracellular space into 'bath' (far from the cell) and 'cleft' (near the cell)." .
 
 :extracellular_cleft_potassium_concentration
     a :Annotation ;
     a :ExtracellularCleftConcentration ;
-    rdfs:label "Potassium concentration in the extracellular cleft" .
+    rdfs:label "Potassium concentration in the extracellular cleft" ;
     rdfs:comment "Some models divide the extracellular space into 'bath' (far from the cell) and 'cleft' (near the cell)." .
 
 :extracellular_cleft_calcium_concentration
     a :Annotation ;
     a :ExtracellularCleftConcentration ;
-    rdfs:label "Calcium concentration in the extracellular cleft" .
+    rdfs:label "Calcium concentration in the extracellular cleft" ;
     rdfs:comment "Some models divide the extracellular space into 'bath' (far from the cell) and 'cleft' (near the cell)." .
 
 :extracellular_cleft_sodium_concentration
     a :Annotation ;
     a :ExtracellularCleftConcentration ;
-    rdfs:label "Sodium concentration in the extracellular cleft" .
+    rdfs:label "Sodium concentration in the extracellular cleft" ;
     rdfs:comment "Some models divide the extracellular space into 'bath' (far from the cell) and 'cleft' (near the cell)." .
 
 :extracellular_cleft_chloride_concentration
     a :Annotation ;
     a :ExtracellularCleftConcentration ;
-    rdfs:label "Chloride concentration in the extracellular cleft" .
+    rdfs:label "Chloride concentration in the extracellular cleft" ;
     rdfs:comment "Some models divide the extracellular space into 'bath' (far from the cell) and 'cleft' (near the cell)." .
 
 # =====================================================
