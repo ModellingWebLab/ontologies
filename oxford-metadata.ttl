@@ -314,6 +314,26 @@
     rdfs:label "Faraday's constant - F" ;
     rdfs:comment "Equal to the electical charge on one mole of electrons." .
 
+:Probability
+    a :Category ;
+    rdfs:label "Probability" .
+
+:hodgkin_huxley_gate
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
+    a :Probability ;
+    a :CellMembraneCurrentRelated ;
+    rdfs:label "Hodgkin-Huxley Gate" ;
+    rdfs:comment "For any state variable which is a Hodgkin-Huxley gating variable." .
+
+:markov_model_state
+    a :Annotation ;
+    a :MultipleUsesAllowed ;
+    a :Probability ;
+    a :CellMembraneCurrentRelated ;
+    rdfs:label "Markov Model State" ;
+    rdfs:comment "For any state variable which is a state in a Markov model for an ion channel." .
+
 # ======================================================================
 # Cardiac-Specific Labels
 # ======================================================================
@@ -646,6 +666,7 @@
 
 :potassium_channel_n_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembranePotassiumChannelRelated ;
     rdfs:label "Potassium channel n gate" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
@@ -673,12 +694,14 @@
 
 :rapid_time_dependent_potassium_current_Xr1_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembranePotassiumChannelRelated ;
     rdfs:label "Rapid time-dependent potassium current Xr1 gate" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
 
 :rapid_time_dependent_potassium_current_Xr2_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembranePotassiumChannelRelated ;
     rdfs:label "Rapid time-dependent potassium current Xr2 gate" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
@@ -692,6 +715,7 @@
 
 :slow_time_dependent_potassium_current_Xs_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembranePotassiumChannelRelated ;
     rdfs:label "Slow time-dependent potassium current Xs gate" ;
     rdfs:comment "Historical metadata - only for early models lacking components." .
@@ -753,11 +777,13 @@
 
 :membrane_fast_sodium_current_m_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current m gate" .
 
 :membrane_fast_sodium_current_h_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current h gate" .
 
@@ -768,6 +794,7 @@
 
 :membrane_fast_sodium_current_j_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneSodiumChannelRelated ;
     rdfs:label "Membrane fast sodium current j gate" .
 
@@ -970,6 +997,7 @@
 
 :membrane_transient_outward_current_r_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane transient outward current r gate" .
 
@@ -994,6 +1022,7 @@
 
 :membrane_transient_outward_current_s_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembranePotassiumChannelRelated ;
     rdfs:label "Membrane transient outward current s gate" .
 
@@ -1088,6 +1117,7 @@
 
 :membrane_hyperpolarisation_activated_funny_current_single_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneMixedChannelRelated ;
     rdfs:label "Membrane hyperpolarisation-activated funny current single gate" .
 
@@ -1169,6 +1199,7 @@
 :membrane_L_type_calcium_current_open_probability
     a :Annotation ;
     a :MembraneCalciumChannelRelated ;
+    a :Probability ;
     rdfs:label "Membrane L-type calcium current open probability" .
 
 :membrane_L_type_calcium_current_driving_term
@@ -1195,41 +1226,49 @@
 
 :membrane_L_type_calcium_current_d_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current d gate" .
 
 :membrane_L_type_calcium_current_f_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current f gate" .
 
 :membrane_L_type_calcium_current_fCass_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current fCass gate" .
 
 :membrane_L_type_calcium_current_fCa_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current fCa gate" .
 
 :membrane_L_type_calcium_current_fCa2_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current fCa2 gate" .
 
 :membrane_L_type_calcium_current_f2_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current f2 gate" .
 
 :membrane_L_type_calcium_current_f2ds_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current f2ds gate" .
 
 :membrane_L_type_calcium_current_d2_gate
     a :Annotation ;
+    a :hodgkin_huxley_gate ;
     a :MembraneCalciumChannelRelated ;
     rdfs:label "Membrane L-type calcium current d2 gate" .
 
