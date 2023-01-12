@@ -323,7 +323,7 @@
     a :MultipleUsesAllowed ;
     a :Probability ;
     a :CellMembraneCurrentRelated ;
-    rdfs:label "Hodgkin-Huxley Gate" .
+    rdfs:label "Hodgkin-Huxley Gate" ;
     rdfs:comment "For any state variable which is a Hodgkin-Huxley gating variable." .
 
 :markov_model_state
@@ -331,7 +331,7 @@
     a :MultipleUsesAllowed ;
     a :Probability ;
     a :CellMembraneCurrentRelated ;
-    rdfs:label "Markov Model State" .
+    rdfs:label "Markov Model State" ;
     rdfs:comment "For any state variable which is a state in a Markov model for an ion channel." .
 
 # ======================================================================
