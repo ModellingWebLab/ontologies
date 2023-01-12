@@ -314,9 +314,21 @@
     rdfs:label "Faraday's constant - F" ;
     rdfs:comment "Equal to the electical charge on one mole of electrons." .
 
+:Probability
+    a :Category ;
+    rdfs:label "Probability" .
+
+:hodgkin_huxley_gating_variable
+    a :Probability ;
+    rdfs:label "Hodgkin Huxley Gating Variable (Probability)" .
+
 # ======================================================================
 # Cardiac-Specific Labels
 # ======================================================================
+
+:markov_model_state
+    a :Probability ;
+    rdfs:label "Markov Model State (Probability)" .
 
 # VOLTAGES / POTENTIALS
 :membrane_voltage
@@ -1169,6 +1181,7 @@
 :membrane_L_type_calcium_current_open_probability
     a :Annotation ;
     a :MembraneCalciumChannelRelated ;
+    a :Probability ;
     rdfs:label "Membrane L-type calcium current open probability" .
 
 :membrane_L_type_calcium_current_driving_term
