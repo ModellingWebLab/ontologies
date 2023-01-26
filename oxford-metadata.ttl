@@ -339,7 +339,7 @@
     a :MultipleUsesAllowed ;
     a :Probability ;
     rdfs:label "Probability that does not stay within 0 ... 1 range" ;
-    rdfs:comment "This should be a probability but it is not guaranteed to stay within 0 ... 1 range." .
+    rdfs:comment "This should be a probability but it is not guaranteed to stay within [0,1] because of unusual mathematical formulation. Introduced to prevent checks being generated in code for quantities annotated with this tag" .
 
 # ======================================================================
 # Cardiac-Specific Labels
