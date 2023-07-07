@@ -867,6 +867,12 @@
     a :IonicCurrent ;
     rdfs:label "Membrane rapid delayed rectifier potassium current" .
 
+:membrane_rapid_delayed_rectifier_potassium_current_open_probability
+    a :Annotation ;
+    a :MembranePotassiumChannelRelated ;
+    a :Probability ;
+    rdfs:label "Membrane rapid delayed rectifier potassium current open probability" .
+
 :membrane_rapid_delayed_rectifier_potassium_current_conductance
     a :Annotation ;
     a :MembranePotassiumChannelRelated ;
