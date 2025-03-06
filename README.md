@@ -1,6 +1,6 @@
 # Web Lab Ontologies
 
-A central home for ontology definition files which define metadata tags used to label CellML files. The labelled CellML files can then be used by both [Chaste](https://chaste.cs.ox.ac.uk/trac/wiki) and the [ModellingWebLab](www.github.com/ModellingWebLab) by them referring to this central ontology repository.
+A central home for ontology definition files which define metadata tags used to label CellML files. The labelled CellML files can then be used by both [Chaste](https://chaste.cs.ox.ac.uk/trac/wiki), [ApPredict](https://chaste.github.io/projects/ap-predict/) and the [ModellingWebLab](www.github.com/ModellingWebLab) by them referring to this central ontology repository.
 
 There are a large number of electrophysiology models already labelled with these annotations at https://github.com/chaste/cellml.
 
